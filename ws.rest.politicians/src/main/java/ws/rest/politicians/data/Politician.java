@@ -2,6 +2,12 @@ package ws.rest.politicians.data;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * The Politician class gives all the informations about a politician
+ * @author Courtin Florent
+ * @version 1.0
+ * @since 2023-04-14
+ */
 @XmlRootElement
 public class Politician {
 	private String firstName = null;
@@ -14,18 +20,30 @@ public class Politician {
 	private String job = null;
 	private String twitterId = null;
 	
+	/**
+	 * Constructor of the Politician class according to the situation
+	 */
 	public Politician() {}
 	
+	/**
+	 * Constructor of the Politician class according to the situation
+	 */
 	public Politician(String id) {
 		this.id = id;
 	}
 	
+	/**
+	 * Constructor of the Politician class according to the situation
+	 */
 	public Politician(String id, String firstName, String lastName) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
 
+	/**
+	 * Constructor of the Politician class according to the situation
+	 */
 	public Politician(String firstName, String lastName, String id, String sex, String deptNumber, String deptName,
 			String partyId, String job, String twitterId) {
 		super();
