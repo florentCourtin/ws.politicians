@@ -1,5 +1,7 @@
 package ws.rest.client.parties;
 
+import java.util.List;
+
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
 
@@ -35,7 +37,7 @@ public class PoliticalPartyMain {
 		
 
 		/*
-		// Get a political party
+		// Add information on a political party
 		try {
 			PoliticalParty pp = new PoliticalParty("LIOT");
 			Response response = client.putPoliticalParty(pp);
@@ -45,11 +47,17 @@ public class PoliticalPartyMain {
 			} else {
 				System.out.println("Error while trying to edit the political party : " + response.getStatus());
 			}
-			
 		} catch (NotFoundException e) {
 			System.out.println("Key not found in database");
 			e.printStackTrace();
 		}*/
+		
+		
+		// Get all political parties
+		List<PoliticalParty> politicalParties = client.getAllPoliticalParties();
+		for (PoliticalParty pp : politicalParties) {
+		    System.out.println(pp.toString());
+		}
 	}
 
 }
