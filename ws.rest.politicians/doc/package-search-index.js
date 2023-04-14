@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ws.rest.politicians.data"},{"l":"ws.rest.politicians.dbconfig"},{"l":"ws.rest.politicians.resource"}];updateSearchResults();
