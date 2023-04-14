@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="PoliticianServiceImpService" targetNamespace="http://www.wsPolitician.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.wsPolitician.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://www.wsPolitician.com" schemaLocation="politicianserviceimp_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="deletePolitician">
+    <wsdl:part name="parameters" element="tns:deletePolitician">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllPoliticians">
+    <wsdl:part name="parameters" element="tns:getAllPoliticians">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllPoliticiansResponse">
+    <wsdl:part name="parameters" element="tns:getAllPoliticiansResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPoliticianResponse">
+    <wsdl:part name="parameters" element="tns:getPoliticianResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addPolitician">
+    <wsdl:part name="parameters" element="tns:addPolitician">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPoliticianPartiResponse">
+    <wsdl:part name="parameters" element="tns:getPoliticianPartiResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPoliticianParti">
+    <wsdl:part name="parameters" element="tns:getPoliticianParti">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPolitician">
+    <wsdl:part name="parameters" element="tns:getPolitician">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePoliticianResponse">
+    <wsdl:part name="parameters" element="tns:deletePoliticianResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addPoliticianResponse">
+    <wsdl:part name="parameters" element="tns:addPoliticianResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PoliticianServiceImp">
+    <wsdl:operation name="deletePolitician">
+      <wsdl:input name="deletePolitician" message="tns:deletePolitician">
+    </wsdl:input>
+      <wsdl:output name="deletePoliticianResponse" message="tns:deletePoliticianResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPoliticians">
+      <wsdl:input name="getAllPoliticians" message="tns:getAllPoliticians">
+    </wsdl:input>
+      <wsdl:output name="getAllPoliticiansResponse" message="tns:getAllPoliticiansResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPoliticianParti">
+      <wsdl:input name="getPoliticianParti" message="tns:getPoliticianParti">
+    </wsdl:input>
+      <wsdl:output name="getPoliticianPartiResponse" message="tns:getPoliticianPartiResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPolitician">
+      <wsdl:input name="addPolitician" message="tns:addPolitician">
+    </wsdl:input>
+      <wsdl:output name="addPoliticianResponse" message="tns:addPoliticianResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPolitician">
+      <wsdl:input name="getPolitician" message="tns:getPolitician">
+    </wsdl:input>
+      <wsdl:output name="getPoliticianResponse" message="tns:getPoliticianResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PoliticianServiceImpServiceSoapBinding" type="tns:PoliticianServiceImp">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="deletePolitician">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deletePolitician">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deletePoliticianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPoliticians">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllPoliticians">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllPoliticiansResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPoliticianParti">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPoliticianParti">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPoliticianPartiResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPolitician">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addPolitician">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addPoliticianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPolitician">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPolitician">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPoliticianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PoliticianServiceImpService">
+    <wsdl:port name="PoliticianServiceImpPort" binding="tns:PoliticianServiceImpServiceSoapBinding">
+      <soap:address location="http://localhost:8080/Politicians-soap-ws/services/PoliticianServiceImpPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
